@@ -23,7 +23,15 @@
 - 上传头像(暂未开发)
 - 全局搜索(可以利用爬虫进行搜索，暂未开发)
 
-### 效果图:
+### 安装测试
+#### 1.使用git进行下载项目
+```
+git clone https://github.com/LaravelChen/TouTiao.git
+```
+#### 2.根据你具体的android sdk的版本在gradle里面进行设置即可.
+
+
+### 部分效果图:
 ![Alt text](https://github.com/LaravelChen/TouTiao/raw/master/image/home.gif)
 
 ![Alt text](https://github.com/LaravelChen/TouTiao/raw/master/image/other.gif)
