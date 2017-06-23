@@ -4,6 +4,10 @@
 所以趁着这个机会，我开了一款类似今日头条的App，利用爬虫抓包实现一些数据的显示，整个过程让我了解到了android的网络请求
 方面的诸多知识.
 
+### 个人简介
+- 个人网站:https://laravelchen.com/
+- QQ群：296424369（Web开发交流群）
+
 ### 功能
 - 爬取今日头条的实时数据
 - 利用Recyclerview和PageFragment和自定义数据类型的结合进行显示数据
@@ -21,6 +25,18 @@
 
 ### 效果图:
 ![Alt text](https://github.com/LaravelChen/TouTiao/raw/master/image/home.gif)
+
+![Alt text](https://github.com/LaravelChen/TouTiao/raw/master/image/other.gif)
+
+![Alt text](https://github.com/LaravelChen/TouTiao/raw/master/image/login.gif)
+
+![Alt text](https://github.com/LaravelChen/TouTiao/raw/master/image/info.gif)
+
+![Alt text](https://github.com/LaravelChen/TouTiao/raw/master/image/logout.gif)
+
+> 最后如果您觉得对您的学习有帮助的话可以给一个star！谢谢！，有什么问题可以在issue中提出，我会及时回复!
+
+
 
 
 
