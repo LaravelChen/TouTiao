@@ -8,12 +8,26 @@
 - 个人网站:https://laravelchen.com/
 - QQ群：296424369（Web开发交流群）
 
+### 技术栈
+- 使用Joup和Okhttp进行网络数据的爬取
+- 使用Recyclerview和PageFragment和自定义数据类型进行新闻数据的显示
+- 基于Retrofit和RxJava打的的链式网络库
+- 支持rxJava链式操作
+- 对于接口数据的获取我采用Novate框架，使用简单
+- 对于用户的登录这块，按照标准流程应该是遵循OAuth2.0的流程，之后有时间进行更改
+- 图片的显示使用ImageLoader
+- 头像的显示使用CircleImageView
+- 日期选择器使用的是仿ios的PickerView
+- 弹窗的显示使用的是materialedittext
+- 整个界面的大部分控件使用的是Material Design设计规范
+
 ### 功能
 - 爬取今日头条的实时数据
 - 利用Recyclerview和PageFragment和自定义数据类型的结合进行显示数据
 - 支持查看具体的列表内容，包括视频等
 - 支持查看图片并且支持保存图片到本地图库
 - 支持实时刷新获取数据
+- 用户接口数据采用PHP写的
 - 支持用户注册登录
 - 用户收藏新闻
 - 支持主题换肤
