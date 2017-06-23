@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_setting"
+            android:icon="@mipmap/shezhi"
+            android:title="个人设置"></item>
+        <item
+            android:id="@+id/item_theme"
+            android:icon="@mipmap/zhuti"
+            android:title="更改主题"></item>
+        <item
+            android:id="@+id/item_love"
+            android:icon="@mipmap/shoucang"
+            android:title="个人收藏"></item>
+
+
+    </group>
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_share"
+            android:icon="@mipmap/fenxiang"
+            android:title="分享至"></item>
+    </group>
+    <group
+        android:id="@+id/grp3"
+        android:checkableBehavior="single">
+        <item
+            android:icon="@mipmap/tuichu"
+            android:id="@+id/logout"
+            android:title="退出登录"></item>
+    </group>
+</menu>

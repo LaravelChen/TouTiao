@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.laravelchen.toutiao.ArticleContentShow">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/contentToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@mipmap/fanhui"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#fff"
+      ></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/joke_image"
+            android:layout_width="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:id="@+id/joketitle"
+            android:text="LaravelChen"
+            android:textColor="@color/colorblue"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/joke_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/colortitle"
+        android:paddingRight="10dp"
+        android:text="别人用十块钱杜蕾斯，100块钱开房费，拿走你的第一次，我为何要用一套房，一台车把你娶进门？？女人，请自重"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/joke_extra"
+        android:textSize="16dp"
+        android:text="来源:内涵段子 ~ 共1111条评论"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
