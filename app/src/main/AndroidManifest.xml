@@ -39,7 +39,13 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".UserSetting"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".VideoActivity"
+            android:parentActivityName=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>

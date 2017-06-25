@@ -18,6 +18,7 @@ import com.example.laravelchen.toutiao.Constant;
 import com.example.laravelchen.toutiao.Interface.OnItemClickListener;
 import com.example.laravelchen.toutiao.PathRandom;
 import com.example.laravelchen.toutiao.R;
+import com.example.laravelchen.toutiao.VideoActivity;
 import com.example.laravelchen.toutiao.alladapter.RecommendAdapter;
 import com.example.laravelchen.toutiao.alladapter.VideoAdapter;
 import com.example.laravelchen.toutiao.allbean.RecommendBean;
@@ -153,8 +154,9 @@ public class VideoFragment extends Fragment {
                 adapter.setOnItemClickListener(new OnItemClickListener() {
                     @Override
                     public void onClick(View view, int position) {
-                        Intent i = new Intent(getContext(), ArticleContentShow.class);
+                        Intent i = new Intent(getContext(), VideoActivity.class);
                         i.putExtra("share_url", "http://www.365yg.com" + newList.get(position).getSource_url());
+                        i.putExtra("video_title",newList.get(position).getTitle());
                         startActivity(i);
                     }
                 });

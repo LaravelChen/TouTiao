@@ -19,14 +19,16 @@
 - 头像的显示使用CircleImageView
 - 日期选择器使用的是仿ios的PickerView
 - 弹窗的显示使用的是materialedittext
+- 视频播放采用ijkplayer神器级播放器
 - 整个界面的大部分控件使用的是Material Design设计规范
 
 ### 功能
 - 爬取今日头条的实时数据
 - 利用Recyclerview和PageFragment和自定义数据类型的结合进行显示数据
 - 支持查看具体的列表内容，包括视频等
-- 支持查看图片并且支持保存图片到本地图库
+- 支持查看图片并且支持保存图片到本地图库(爬取图片的url是难点)
 - 支持实时刷新获取数据
+- 支持视频播放(爬取视频url非常难)
 - 用户接口数据采用PHP写的
 - 支持用户注册登录
 - 用户收藏新闻
@@ -36,6 +38,14 @@
 - 第三方登录(暂未开发)
 - 上传头像(暂未开发)
 - 全局搜索(可以利用爬虫进行搜索，暂未开发)
+
+### 技术难点
+你仔细看的话可能发现我在写图片和视频的时候都加上了比较难的字样，过程也确实如此，因为头条新闻的官网不像大部分的网站那样是将url直接
+写在html中，因为这样主要太容易被爬取链接了，所以设计师将url全部通过script的形式写入html中，这样就容易被爬取到。但是上有政策，下
+有对策，哈哈！我们可以通过网络请求将网页的所有前端代码爬取到，然后通过删选找寻自己想要的部分即可，相册的url的获取这样其实就可以了，
+具体代码可以直接在项目源码中看到，但是对于视频的url可不这么轻松，在script中只有视频的video_id所以必须再次拼接api获取相应的video信息，
+但是获取到之后，这个coding者真是太坑爹了！将视频的url加密的，我的天!不得不吐槽一下！幸好github上面有大神提前解决过此事，我便依葫芦画瓢
+的将次加密过后的链接解码了，之后便可以播放视频了！那么，具体的代码请在项目源码中查看!有问题请在issue中提出！我会尽可能解决 ！
 
 ### 安装测试
 #### 1.使用git进行下载项目
@@ -48,7 +58,9 @@ git clone https://github.com/LaravelChen/TouTiao.git
 ### 部分效果图:
 ![Alt text](https://github.com/LaravelChen/TouTiao/raw/master/image/home.gif)
 
-![Alt text](https://github.com/LaravelChen/TouTiao/raw/master/image/other.gif)
+![Alt text](https://github.com/LaravelChen/TouTiao/raw/master/image/photo.gif)
+
+![Alt text](https://github.com/LaravelChen/TouTiao/raw/master/image/video.gif)
 
 ![Alt text](https://github.com/LaravelChen/TouTiao/raw/master/image/login.gif)
 
